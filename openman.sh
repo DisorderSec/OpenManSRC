@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 STATU=$(ps -A | wc -l)
-#IP=$(wget -qO- ipv4.icanhazip.com)
+IP=$(wget -qO- ipv4.icanhazip.com)
 HOST=$(hostname)
 DATA=$(date)
 echo -e "\033[01;33m_________________________________________________\033[01;37m"
