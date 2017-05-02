@@ -1,7 +1,7 @@
 #!/bin/bash
 apt-get install figlet
 clear
-figlet -cf OpenMan
+figlet -c OpenMan
 echo ""
 echo "BEM VINDO"
 echo ""
@@ -16,8 +16,21 @@ echo "JorisBRA"
 echo ""
 echo "ENTER PARA CONTINUAR"
 read ok
+#exclusão de versões antigas
+rm -rf /root/openman.sh
+rm -rf /bin/1*
+rm -rf /bin/1.sh
+rm -rf /bin/2.sh
+rm -rf /bin/3.sh
+rm -rf /bin/4.sh
+rm -rf /bin/5.sh
+rm -rf /bin/6.sh
+rm -rf /bin/7.sh
+rm -rf /bin/8.sh
+rm -rf /bin/9.sh
 wget https://raw.githubusercontent.com/MessiahOffDarkness/OpenManSRC/master/openman.sh -O /root/openman.sh
 chmod +x /root/openman.sh
+echo "./openman.sh" >> /etc/bash.bashrc
 clear
 wget https://raw.githubusercontent.com/MessiahOffDarkness/OpenManSRC/master/1.sh -O /bin/1.sh && chmod +x /bin/1.sh
 wget https://raw.githubusercontent.com/MessiahOffDarkness/OpenManSRC/master/2.sh -O /bin/2.sh && chmod +x /bin/2.sh
@@ -40,7 +53,7 @@ wget https://raw.githubusercontent.com/MessiahOffDarkness/OpenManSRC/master/18.s
 wget https://raw.githubusercontent.com/MessiahOffDarkness/OpenManSRC/master/19.sh -O /bin/19.sh && chmod +x /bin/19.sh
 wget https://raw.githubusercontent.com/RicKbrL/VpsPack/master/install && bash install
 clear
-openman
+su
 
 
 
