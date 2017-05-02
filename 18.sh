@@ -2,10 +2,7 @@
 apt-get install speedtest-cli
 clear
 speedtest
-echo "Refazer? s/n"
-read -n REF
-if [ $REF -eq s ]; then
-./18.sh
-else
+echo "ENTER"
+read ok
 ./openman.sh
-fi
+
