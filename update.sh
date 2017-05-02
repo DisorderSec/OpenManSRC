@@ -1,4 +1,6 @@
 #!/bin/bash
+rm -rf /root/update.sh
+rm -rf /bin/update.sh
 apt-get install figlet
 clear
 figlet -c OpenMan
